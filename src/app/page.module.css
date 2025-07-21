@@ -25,31 +25,32 @@ html, body {
     color: #333;
 }
 
-.InscriptionsButton button {
+.InscriptionsButton {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 60px;
     color: #fff;
     background-color: #00ADB5;
-    border: none;
-    outline: none;
-    font-weight: 400;
     border-radius: 9999px;
     font-size: 1.75rem;
-    padding: 15px 60px;
     text-align: center;
-    margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
+    text-decoration: none;
+    font-weight: 400;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
 
-.InscriptionsButton button:hover {
-    background-color: #008187; 
-    transform: scale(1.05);   
+
+.InscriptionsButton:hover {
+    background-color: #008187;
+    transform: scale(1.05);
 }
 
-/* Efeito ao clicar no botão */
-.InscriptionsButton button:active {
-    transform: scale(0.98); 
+.InscriptionsButton:active {
+    transform: scale(0.98);
 }
+
 
 .InscriptionsSubText p {
     font-size: 0.9rem;

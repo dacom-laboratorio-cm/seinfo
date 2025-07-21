@@ -9,15 +9,20 @@ const Inscriptions = () => {
 
         <div className={styles.InscriptionsText}>
             <p>
-                Garanta sua vaga de forma rápida e descomplicada com a Even3. 
+                Garanta sua vaga de forma rápida e descomplicada com a Even3. <br/>
                 Cadastre-se em poucos cliques e tenha acesso imediato à SEINFO! 
                 Depois da inscrição, é só comparecer e aproveitar o evento ao máximo!
             </p>
         </div>
 
-        <div className={styles.InscriptionsButton}>
-            <button type="button">Inscrever-se</button>
-        </div>
+        {/* COLOCAR O LINK DO even3 AQUI */}
+        <a
+            href="https://even3.com.br/seinfo"
+            className={styles.InscriptionsButton}
+            >
+            Inscrever-se
+        </a>
+
 
          <div className={styles.InscriptionsSubText}>
             <p>

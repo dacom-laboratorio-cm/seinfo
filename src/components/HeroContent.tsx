@@ -10,7 +10,7 @@ const HeroContent = () => {
       <p className={styles.description}>
         Lorem ipsum dolor sit amet. Qui quas internos et provident incidunt est eligendi quae ut iusto nobis. Ea dolore dolorem eos consequatur voluptas in eaque quisquam et dolor molestias ut nesciunt eius ut consequatur dolorem. Et ducimus illum sed animi voluptas et doloremque magni.
       </p>
-      <a href="#saiba-mais" className={styles.ctaButton}>
+      <a href="" className={styles.ctaButton}>
         Saiba mais!
       </a>
     </div>
