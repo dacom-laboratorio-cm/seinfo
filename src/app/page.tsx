@@ -3,17 +3,19 @@ import HeroContent from "@/components/HeroContent";
 import ImageCollage from "@/components/ImageCollage";
 import Footer from "@/components/Footer";
 import styles from "./page.module.css";
+import Inscriptions from "@/components/Inscriptions";
 
 export default function HomePage() {
   return (
     <>
-      <Header />
+      <Header/>
       <main>
         <div className={styles.heroSection}>
-          <HeroContent />
+          <HeroContent/>
           {/*<ImageCollage /> */}
         </div>
-       
+        
+        <Inscriptions/>
         <Footer/>
       </main>
     </>
