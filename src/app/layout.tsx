@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Lato, Pixelify_Sans } from "next/font/google";
+import { Lato, Jersey_15 } from "next/font/google"; // Alterado: Importa Jersey_15
 import "./globals.css";
+
 
 const lato = Lato({
   subsets: ["latin"],
@@ -8,9 +9,10 @@ const lato = Lato({
   variable: "--font-sans",
 });
 
-const pixelify = Pixelify_Sans({
+
+const jersey15 = Jersey_15({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: "400", 
   variable: "--font-pixel", 
 });
 
@@ -26,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${lato.variable} ${pixelify.variable}`}>
+      <body className={`${lato.variable} ${jersey15.variable}`}>
         {children}
       </body>
     </html>

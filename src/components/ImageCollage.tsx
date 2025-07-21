@@ -8,32 +8,35 @@ interface ImageType {
   itemClass: string;
 }
 
+
 const images: ImageType[] = [
   {
     src: '/images/foto1.png',
-    alt: 'Descrição da foto 1',
+    alt: 'Pessoa apresentando em um evento de tecnologia',
     itemClass: styles.item1,
   },
   {
     src: '/images/foto2.png',
-    alt: 'Descrição da foto 2',
+    alt: 'Público assistindo a uma palestra',
     itemClass: styles.item2,
   },
   {
     src: '/images/foto3.png',
-    alt: 'Descrição da foto 3',
+    alt: 'Grupo de participantes do evento posando para foto',
     itemClass: styles.item3,
   },
   {
     src: '/images/foto4.png',
-    alt: 'Descrição da foto 4',
-    itemClass: styles.item3,
+    alt: 'Palestrante explicando sobre perícia forense computacional',
+    itemClass: styles.item4,
   },
   {
     src: '/images/foto5.png',
-    alt: 'Descrição da foto 5',
-    itemClass: styles.item3,
+    alt: 'Palestrante apontando para código em uma tela',
+    itemClass: styles.item5,
   },
+
+
 ];
 
 const ImageCollage = () => {
@@ -46,7 +49,7 @@ const ImageCollage = () => {
             alt={image.alt}
             width={500}
             height={500}
-            priority={index < 3}
+            priority={index < 4}
           />
         </div>
       ))}
