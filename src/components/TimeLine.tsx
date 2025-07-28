@@ -1,4 +1,4 @@
-import styles from "@/app/page.module.css";
+import styles from "@/styles/timeline.module.css";
 
 const timelineData = [
   { date: "01/08", title: "Abertura do Evento", description: "Palestras e mais alguma coisa." },
