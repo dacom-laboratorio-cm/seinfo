@@ -1,0 +1,52 @@
+.Inscriptions {
+  width: 100%;
+  padding: 48px 24px;
+  background-color: #f7f7f7;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.Inscriptions h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.InscriptionsText p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.InscriptionsButton {
+  width: 20%;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #00adb5;
+  border-radius: 9999px;
+  font-size: 1.75rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.InscriptionsButton:hover {
+  background-color: #008187;
+  transform: scale(1.05);
+}
+
+.InscriptionsButton:active {
+  transform: scale(0.98);
+}
+
+.InscriptionsSubText p {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+}

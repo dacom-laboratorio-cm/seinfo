@@ -1,0 +1,147 @@
+.timelineSection {
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 70px;
+  background-color: #f7f7f7;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 48px;
+  color: #4b0082;
+}
+
+.timelineWrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 60px;
+  padding: 80px 0;
+  margin-bottom: 40px;
+}
+
+.timelineLine {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: purple;
+  z-index: 1;
+}
+
+.timelineItem {
+  position: relative;
+  width: 180px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top .content {
+  transform: translateY(-100%); /* sobe totalmente */
+  text-align: center;
+}
+
+.bottom .content {
+  transform: translateY(100%); /* desce totalmente */
+  text-align: center;
+}
+
+.circleContainer {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dateAbove {
+  padding-bottom: 10px;
+  margin-top: -35px;
+  font-weight: bold;
+  font-size: larger;
+  color: #555;
+}
+
+.dateBelow {
+  padding-top: 35px;
+  margin-bottom: -60px;
+  font-weight: bold;
+  font-size: larger;
+  color: #555;
+}
+
+.outerCircle {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: 3px solid #3b82f6; /* azul */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerCircle {
+  width: 12px;
+  height: 12px;
+  background-color: #3b82f6; /* azul */
+  border-radius: 50%;
+}
+
+.content {
+  margin: 12px 0;
+  text-align: center;
+}
+
+.date {
+  font-weight: bold;
+  color: #4b0082;
+}
+
+.connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.connectorTop .connectorLine {
+  height: 50px;
+  margin-bottom: -40px;
+}
+
+.connectorBottom .connectorLine {
+  height: 50px;
+  margin-top: -40px;
+}
+
+.connectorLine {
+  width: 2px;
+  height: 50px;
+  background-color: #ccc;
+}
+
+.connectorDot {
+  width: 8px;
+  height: 8px;
+  background-color: #888;
+  border-radius: 50%;
+  margin-top: 2px;
+}
+
+.eventTitle {
+  font-size: 1.1rem;
+  margin: 6px 0;
+  color: #333;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #666;
+}

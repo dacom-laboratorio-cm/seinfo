@@ -1,22 +1,26 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import HeroContent from "@/components/HeroContent";
 import ImageCollage from "@/components/ImageCollage";
-import Footer from "@/components/Footer";
-import styles from "./page.module.css";
 import Inscriptions from "@/components/Inscriptions";
+import DatesTimeline from "@/components/TimeLine";
+import styles from "./page.module.css";
 
 export default function HomePage() {
   return (
     <>
-      <Header/>
+      <Header />
       <main>
         <div className={styles.heroSection}>
-          <HeroContent/>
-          {/*<ImageCollage /> */}
+          <HeroContent />
+          <ImageCollage />
         </div>
-        
-        <Inscriptions/>
-        <Footer/>
+        <div className="">
+          <DatesTimeline />
+        </div>
+
+        <Inscriptions />
+        <Footer />
       </main>
     </>
   );

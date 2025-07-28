@@ -1,0 +1,27 @@
+.Footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #eeeeee;
+  padding: calc(var(--spacing-unit) * 2);
+  margin: 0;
+  width: 100%;
+}
+
+.FooterCopyright {
+  align-self: flex-start;
+}
+
+.FooterCopyright p {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.FooterImages img {
+  transition: transform 0.3s ease;
+}
+
+.FooterImages img:hover {
+  transform: scale(1.05);
+}

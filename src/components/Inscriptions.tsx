@@ -1,4 +1,4 @@
-import styles from '@/app/page.module.css';
+import styles from '@/styles/inscriptions.module.css';
 
 const Inscriptions = () => {
   return (
