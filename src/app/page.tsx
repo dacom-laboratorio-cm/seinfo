@@ -12,7 +12,7 @@ export default function HomePage() {
       <main>
         <div className={styles.heroSection}>
           <HeroContent/>
-          {/*<ImageCollage /> */}
+          <ImageCollage />
         </div>
         
         <Inscriptions/>
