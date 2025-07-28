@@ -1,167 +1,307 @@
-html, body {
-    margin: 0;
-    padding: 0;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 .Inscriptions {
-    width: 100%;
-    padding: 48px 24px;
-    background-color: #f7f7f7;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+  width: 100%;
+  padding: 48px 24px;
+  background-color: #f7f7f7;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .Inscriptions h2 {
-    font-size: 2rem;
-    margin-bottom: 8px;
+  font-size: 2rem;
+  margin-bottom: 8px;
 }
 
 .InscriptionsText p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #333;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
 }
 
 .InscriptionsButton {
-    width: 20%;
-    display: block;
-    margin: 0 auto;
-    padding: 10px 60px;
-    color: #fff;
-    background-color: #00ADB5;
-    border-radius: 9999px;
-    font-size: 1.75rem;
-    text-align: center;
-    text-decoration: none;
-    font-weight: 400;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
+  width: 20%;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #00adb5;
+  border-radius: 9999px;
+  font-size: 1.75rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
 
-
 .InscriptionsButton:hover {
-    background-color: #008187;
-    transform: scale(1.05);
+  background-color: #008187;
+  transform: scale(1.05);
 }
 
 .InscriptionsButton:active {
-    transform: scale(0.98);
+  transform: scale(0.98);
 }
-
 
 .InscriptionsSubText p {
-    font-size: 0.9rem;
-    color: #666;
-    font-style: italic;
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
 }
 
-
-.Footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #EEEEEE;
-    padding: calc(var(--spacing-unit) * 2);
-    margin: 0;
-    width: 100%;
+.Footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #eeeeee;
+  padding: calc(var(--spacing-unit) * 2);
+  margin: 0;
+  width: 100%;
 }
 
 .FooterCopyright {
-    align-self: flex-start; 
+  align-self: flex-start;
 }
 
 .FooterCopyright p {
-    font-size: 0.8rem;
-    color: #555;
+  font-size: 0.8rem;
+  color: #555;
 }
 
-
 .FooterImages img {
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .FooterImages img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
-
 
 .siteHeader {
-    padding: calc(var(--spacing-unit) * 2);
+  padding: calc(var(--spacing-unit) * 2);
 }
 .mainNav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    gap: calc(var(--spacing-unit) * 3);
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: calc(var(--spacing-unit) * 3);
 }
 .mainNav a {
-    text-decoration: none;
-    color: var(--color-text-primary);
-    font-weight: 700;
+  text-decoration: none;
+  color: var(--color-text-primary);
+  font-weight: 700;
 }
 
 .heroSection {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    align-items: center;
-    gap: calc(var(--spacing-unit) * 4);
-    min-height: 450px;
-    padding: calc(var(--spacing-unit) * 2);
-    max-width:  100vw;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: calc(var(--spacing-unit) * 4);
+  min-height: 450px;
+  padding: calc(var(--spacing-unit) * 2);
+  max-width: 100vw;
 }
-
 
 .editionTag {
-    font-weight: 700;
-    margin-bottom: var(--spacing-unit);
+  font-weight: 700;
+  margin-bottom: var(--spacing-unit);
 }
 .brandLogo {
-    font-family: var(--font-pixel);
-    font-size: clamp(3rem, 10vw, 6rem);
-    font-weight: 700;
-    color: var(--color-text-primary);
-    letter-spacing: 2px;
-    line-height: 1.1;
-    margin: var(--spacing-unit) 0;
+  font-family: var(--font-pixel);
+  font-size: clamp(3rem, 10vw, 6rem);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  letter-spacing: 2px;
+  line-height: 1.1;
+  margin: var(--spacing-unit) 0;
 }
 .brandLogo.year {
-    color: var(--color-logo-accent);
+  color: var(--color-logo-accent);
 }
 .description {
-    max-width: 50ch;
+  max-width: 50ch;
 }
 .ctaButton {
-    display: inline-block;
-    background-color: var(--color-primary);
-    color: var(--color-background);
-    padding: calc(var(--spacing-unit) * 1.5) calc(var(--spacing-unit) * 4);
-    border-radius: 999em;
-    text-decoration: none;
-    font-weight: 700;
-    margin-top: calc(var(--spacing-unit) * 3);
-    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+  display: inline-block;
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  padding: calc(var(--spacing-unit) * 1.5) calc(var(--spacing-unit) * 4);
+  border-radius: 999em;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: calc(var(--spacing-unit) * 3);
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease;
 }
 .ctaButton:hover {
-    background-color: var(--color-primary-hover);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .imageCollageWrapper {
-    position: relative;
-    width: 600px;
-    height: 200px;
-    margin: auto;
-    top: -200px;
+  position: relative;
+  width: 600px;
+  height: 200px;
+  margin: auto;
+  top: -200px;
 }
 
-
 .heroSection {
-    display: flex;
-    align-items: center;          
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.timelineSection {
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 70px;
+  background-color: #f7f7f7;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 48px;
+  color: #4b0082;
+}
+
+.timelineWrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 60px;
+  padding: 80px 0;
+}
+
+.timelineLine {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: purple;
+  z-index: 1;
+}
+
+.timelineItem {
+  position: relative;
+  width: 180px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top .content {
+  transform: translateY(-100%); /* sobe totalmente */
+  text-align: center;
+}
+
+.bottom .content {
+  transform: translateY(100%); /* desce totalmente */
+  text-align: center;
+}
+
+.circleContainer {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dateAbove {
+  padding-bottom: 10px;
+  margin-top: -35px;
+  font-weight: bold;
+  font-size: larger;
+  color: #555;
+}
+
+.dateBelow {
+  padding-top: 35px;
+  margin-bottom: -60px;
+  font-weight: bold;
+  font-size: larger;
+  color: #555;
+}
+
+.outerCircle {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: 3px solid #3b82f6; /* azul */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.innerCircle {
+  width: 12px;
+  height: 12px;
+  background-color: #3b82f6; /* azul */
+  border-radius: 50%;
+}
+
+.content {
+  margin: 12px 0;
+  text-align: center;
+}
+
+.date {
+  font-weight: bold;
+  color: #4b0082;
+}
+
+.connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.connectorTop .connectorLine {
+  height: 50px;
+  margin-bottom: -40px;
+}
+
+.connectorBottom .connectorLine {
+  height: 50px;
+  margin-top: -40px;
+}
+
+.connectorLine {
+  width: 2px;
+  height: 50px;
+  background-color: #ccc;
+}
+
+.connectorDot {
+  width: 8px;
+  height: 8px;
+  background-color: #888;
+  border-radius: 50%;
+  margin-top: 2px;
+}
+
+.eventTitle {
+  font-size: 1.1rem;
+  margin: 6px 0;
+  color: #333;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #666;
 }
