@@ -1,0 +1,109 @@
+/* Estilos gerais da seção */
+.talksSection {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Container de cada carrossel (informações + swiper) */
+.carouselContainer {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+  position: relative; /* MODIFICADO: Essencial para posicionar os botões em relação a este container */
+  padding: 0 50px; /* MODIFICADO: Espaço lateral para os botões não colarem no texto */
+  box-sizing: border-box;
+}
+
+/* Container das informações (título, palestrante, data) */
+.infoContainer {
+  text-align: center;
+  color: #444;
+  margin-bottom: 1rem;
+  height: 90px;
+}
+
+.infoContainer h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.infoContainer p {
+  font-size: 1rem;
+  margin: 0.25rem 0;
+}
+
+/* Container principal do Swiper */
+.swiperContainer {
+  width: 100%;
+  height: 300px;
+  padding-bottom: 4rem; /* MODIFICADO: Aumenta o espaço abaixo para a paginação */
+}
+
+/* Estilo de cada slide */
+.slide {
+  background-position: center;
+  background-size: cover;
+  width: 420px;
+  height: 250px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carouselContainer :global(.swiper-pagination) {
+  /* position: relative;  */
+  width: 100%;
+  margin-top: 1.5rem; 
+  bottom: auto;
+}
+
+.carouselContainer :global(.swiper-button-next),
+.carouselContainer :global(.swiper-button-prev) {
+  position: absolute; 
+  top: 55%;
+  transform: translateY(-50%);
+  color: #007aff;
+  width: 44px;
+  height: 44px;
+}
+
+.carouselContainer :global(.swiper-button-prev) {
+  left: 0px;
+}
+
+.carouselContainer :global(.swiper-button-next) {
+  right: 0px; 
+}
+
+.carouselContainer :global(.swiper-pagination-bullet) {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  opacity: 1;
+}
+
+.carouselContainer :global(.swiper-pagination-bullet-active) {
+  background-color: #007aff;
+}

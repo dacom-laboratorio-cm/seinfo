@@ -5,6 +5,7 @@ import ImageCollage from "@/components/ImageCollage";
 import Inscriptions from "@/components/Inscriptions";
 import DatesTimeline from "@/components/TimeLine";
 import styles from "./page.module.css";
+import TalksSection from "@/components/TalkSection";
 
 export default function HomePage() {
   return (
@@ -15,8 +16,13 @@ export default function HomePage() {
           <HeroContent />
           <ImageCollage />
         </div>
+
         <div className="">
           <DatesTimeline />
+        </div>
+
+        <div className="">
+          <TalksSection />
         </div>
 
         <Inscriptions />
