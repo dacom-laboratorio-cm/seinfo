@@ -87,6 +87,7 @@
   color: #007aff;
   width: 44px;
   height: 44px;
+ 
 }
 
 .carouselContainer :global(.swiper-button-prev) {

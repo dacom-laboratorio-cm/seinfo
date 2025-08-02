@@ -2,7 +2,7 @@ import styles from '@/styles/inscriptions.module.css';
 
 const Inscriptions = () => {
   return (
-    <footer className={styles.Inscriptions}>
+    <div id="inscricoes" className={styles.Inscriptions}>
         <h2>
             Inscrições 
         </h2>
@@ -17,7 +17,7 @@ const Inscriptions = () => {
 
         {/* COLOCAR O LINK DO even3 AQUI */}
         <a
-            href="https://even3.com.br/seinfo"
+            href=""
             className={styles.InscriptionsButton}
             >
             Inscrever-se
@@ -29,7 +29,7 @@ const Inscriptions = () => {
                 OBS.: Os certificados de participação serão enviados no E-mail utilizado no cadastro
             </p>
         </div>
-    </footer>
+    </div>
   );
 };
 

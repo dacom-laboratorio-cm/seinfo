@@ -1,0 +1,117 @@
+.siteHeader {
+    position: sticky;
+    top: 0;
+    width: 100%; 
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    min-height: 70px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    z-index: 1000; 
+}
+
+
+:global(body.noScroll) {
+     overflow: hidden;
+}
+
+.hamburger {
+    display: none;
+    z-index: 2001; 
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hamburgerLine {
+    width: 2rem;
+    height: 0.25rem;
+    background: #333;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+}
+
+.hamburgerOpen .hamburgerLine:nth-child(1) {
+    transform: rotate(45deg);
+}
+.hamburgerOpen .hamburgerLine:nth-child(2) {
+     opacity: 0;
+    transform: translateX(20px);
+}
+.hamburgerOpen .hamburgerLine:nth-child(3) {
+     transform: rotate(-45deg);
+}
+
+
+/* Navegação Principal */
+.mainNav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.mainNav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.5rem;
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+    .hamburger {
+         display: flex;
+    }
+
+    .mainNav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        max-width: 80vw;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(8px);
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1999; 
+    }
+
+    .navOpen {
+        transform: translateX(0);
+    }
+
+    .mainNav ul {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .mainNav a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 769px) {
+  .siteHeader {
+    justify-content: flex-start;
+  }
+}

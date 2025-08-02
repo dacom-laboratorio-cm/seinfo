@@ -1,22 +1,11 @@
-html,
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; 
+} 
+
 body {
   margin: 0;
   padding: 0;
-}
-
-.siteHeader {
-  padding: calc(var(--spacing-unit) * 2);
-}
-.mainNav ul {
-  list-style: none;
-  display: flex;
-  justify-content: flex-start;
-  gap: calc(var(--spacing-unit) * 3);
-}
-.mainNav a {
-  text-decoration: none;
-  color: var(--color-text-primary);
-  font-weight: 700;
 }
 
 .heroSection {

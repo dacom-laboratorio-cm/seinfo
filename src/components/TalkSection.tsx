@@ -63,7 +63,7 @@ const Carousel = ({ items }: CarouselProps) => {
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={3} // MODIFICADO: De 'auto' para 3 para garantir a visão dos slides laterais
-        loop={true}
+        loop={false}
         navigation
         pagination={{ clickable: true }}
         onSlideChange={handleSlideChange}
@@ -98,7 +98,7 @@ const TalksSection = () => {
       <h2 className={styles.sectionTitle}>Palestras</h2>
       <Carousel items={palestras} />
 
-      <h2 className={styles.sectionTitle}>Minicursos</h2>
+      <h2 id="minicursos" className={styles.sectionTitle}>Minicursos</h2>
       <Carousel items={minicursos} />
     </section>
   );
