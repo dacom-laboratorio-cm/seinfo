@@ -25,3 +25,44 @@
 .FooterImages img:hover {
   transform: scale(1.05);
 }
+
+@media (min-width: 768px) {
+  .Footer {
+    padding: 3rem 2rem;
+    gap: 2rem;
+  }
+
+  .Footer h2 {
+    font-size: 1.8rem;
+  }
+
+  .FooterCopyright p {
+    font-size: 0.9rem;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .Footer {
+    padding: 3rem;
+  }
+
+  .Footer h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Footer {
+    padding: 1.5rem 0.5rem;
+    gap: 1rem;
+  }
+
+  .Footer h2 {
+    font-size: 1.3rem;
+  }
+
+  .FooterImages {
+    padding: 0 0.5rem;
+  }
+}

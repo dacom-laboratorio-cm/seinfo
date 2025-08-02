@@ -54,7 +54,6 @@
   padding-bottom: 4rem; /* MODIFICADO: Aumenta o espaço abaixo para a paginação */
 }
 
-/* Estilo de cada slide */
 .slide {
   background-position: center;
   background-size: cover;
@@ -107,4 +106,71 @@
 
 .carouselContainer :global(.swiper-pagination-bullet-active) {
   background-color: #007aff;
+}
+
+@media (min-width: 768px) {
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .infoContainer h3 {
+    font-size: 1.5rem;
+  }
+  
+  .infoContainer p {
+    font-size: 1rem;
+  }
+  
+  .slide {
+    height: 250px;
+    border-radius: 16px;
+  }
+  
+  .carouselContainer :global(.swiper-button-next),
+  .carouselContainer :global(.swiper-button-prev) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .talksSection {
+    padding: 2rem 0;
+  }
+  
+  .carouselContainer {
+    padding: 0 50px;
+  }
+  
+  .carouselContainer :global(.swiper-button-prev) {
+    left: 10px;
+  }
+  
+  .carouselContainer :global(.swiper-button-next) {
+    right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+  
+  .infoContainer h3 {
+    font-size: 1.1rem;
+  }
+  
+  .infoContainer p {
+    font-size: 0.8rem;
+  }
+  
+  .slide {
+    height: 180px;
+    border-radius: 8px;
+  }
+  
+  .carouselContainer :global(.swiper-button-next),
+  .carouselContainer :global(.swiper-button-prev) {
+    display: none; 
+  }
 }
