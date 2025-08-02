@@ -1,6 +1,7 @@
 .timelineSection {
   padding: 40px;
   text-align: center;
+  margin-bottom: 70px;
   background-color: #f7f7f7;
 }
 
@@ -143,4 +144,67 @@
 .description {
   font-size: 0.9rem;
   color: #666;
+}
+
+
+@media (max-width: 1016px) {
+  .timelineSection{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-right: 3px;
+  }
+
+  .timelineWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 0;
+    gap: 40px;
+  }
+
+  .timelineLine {
+    top: 0;
+    left: calc(24px / 2 - 2px); 
+    height: 100%;
+    width: 4px;
+  }
+
+  .timelineItem {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 50px;
+    position: relative;
+  }
+
+  .circleContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: none;
+  }
+
+  .dateAbove,
+  .dateBelow {
+    display: none;
+  }
+
+  .content {
+    transform: none;
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  .connector {
+    display: none;
+  }
+
+  .top .content,
+  .bottom .content {
+    transform: none;
+    margin: 0;
+
+  }
+ 
 }
