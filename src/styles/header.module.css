@@ -12,11 +12,6 @@
     z-index: 1000; 
 }
 
-
-:global(body.noScroll) {
-     overflow: hidden;
-}
-
 .hamburger {
     display: none;
     z-index: 2001; 
