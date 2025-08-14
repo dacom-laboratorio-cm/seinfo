@@ -33,7 +33,7 @@
   text-align: center;
   color: #444;
   margin-bottom: 1rem;
-  height: 90px;
+  height: 150px;
 }
 
 .infoContainer h3 {
@@ -62,6 +62,7 @@
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  /* margin-top: 40px; */
 }
 
 .image {
