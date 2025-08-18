@@ -17,7 +17,7 @@ const Inscriptions = () => {
 
         {/* COLOCAR O LINK DO even3 AQUI */}
         <a
-            href=""
+            href="https://www.even3.com.br/seinfo-2025-610945/"
             className={styles.InscriptionsButton}
             >
             Inscrever-se
