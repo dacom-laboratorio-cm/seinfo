@@ -125,7 +125,7 @@ const minicursos: Talk[] = [
 const conversas: Talk[] = [
   { src: "/images/rodas de conversa/ivanilton.png", title: "PPGCC-CM", speaker: "Prof. Ivanilton Polato", date: "26/08 - 20h30 (Anfiteatro)" },
   { src: "/images/rodas de conversa/Dupla.png", title: "Dupla Diplomação", speaker: "", date: "28/08 - 19h00 (Anfiteatro)" },
-  { src: "/images/foto2.png", title: "Conversa com Egressos", speaker: "Egressos BCC", date: "26/08 - 20h30 (Anfiteatro)" },
+  { src: "/images/rodas de conversa/egressos.jpeg", title: "Conversa com Egressos", speaker: "Egressos BCC", date: "26/08 - 20h30 (Anfiteatro)" },
 ];
 
 type CarouselProps = {
