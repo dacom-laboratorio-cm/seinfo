@@ -46,7 +46,7 @@ const palestras: Talk[] = [
     date: "27/08 - 19h00 (Anfiteatro - Bloco E)",
   },
   {
-    src: "/images/palestras/gabriel leite.png",
+    src: "/images/palestras/gabriel leite.jpg",
     title: "DevOps",
     speaker: "Gabriel Leite da Rocha",
     date: "27/08 - 20h30 (Anfiteatro - Bloco E)",
@@ -206,13 +206,18 @@ const Carousel = ({ items }: CarouselProps) => {
 const TalksSection = () => {
   return (
     <section id="palestras" className={styles.talksSection}>
+       <div className={styles.separator}></div> 
       <h2 className={styles.sectionTitle}>Palestras</h2>
       <Carousel items={palestras} />
+
+      <div className={styles.separator}></div> 
 
       <h2 id="minicursos" className={styles.sectionTitle}>
         Minicursos
       </h2>
       <Carousel items={minicursos} />
+
+      <div className={styles.separator}></div> 
 
       <h2 className={styles.sectionTitle}>Rodas de Conversa</h2>
       <Carousel items={conversas} />

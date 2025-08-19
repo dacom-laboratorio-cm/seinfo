@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; 
+} 
 .heroSection {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
