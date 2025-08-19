@@ -8,9 +8,12 @@ const HeroContent = () => {
         SEINFO <span className={styles.year}>2025</span>
       </h1>
       <p className={styles.description}>
-        Lorem ipsum dolor sit amet. Qui quas internos et provident incidunt est eligendi quae ut iusto nobis. Ea dolore dolorem eos consequatur voluptas in eaque quisquam et dolor molestias ut nesciunt eius ut consequatur dolorem. Et ducimus illum sed animi voluptas et doloremque magni.
+      A SEINFO é uma oportunidade única para quem busca se atualizar, ampliar sua rede de contatos e se aproximar do mercado de trabalho. Todos os conteúdos são pensados para promover o aprendizado prático e o debate de ideias, conectando o ambiente acadêmico com as demandas do mundo real da tecnologia.
+
+Fique por dentro da programação completa, inscreva-se nas atividades e participe dessa imersão no universo da informática.
+
       </p>
-      <a href="" className={styles.ctaButton}>
+      <a href="https://www.instagram.com/cacic.utfprcm/" className={styles.ctaButton}>
         Saiba mais!
       </a>
     </div>

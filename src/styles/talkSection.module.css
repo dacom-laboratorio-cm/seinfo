@@ -47,14 +47,16 @@
   margin: 0.25rem 0;
 }
 
-/* Container principal do Swiper */
 .swiperContainer {
   width: 100%;
+ /* max-width: 1000px;*/
   height: 300px;
-  padding-bottom: 4rem; /* MODIFICADO: Aumenta o espaço abaixo para a paginação */
+  margin-bottom: 2rem;
 }
 
+
 .slide {
+  position: relative;
   background-position: center;
   background-size: cover;
   width: 420px;
@@ -62,6 +64,7 @@
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  aspect-ratio: 16 / 9;
   /* margin-top: 40px; */
 }
 
@@ -72,11 +75,11 @@
   object-fit: cover;
 }
 
+
 .carouselContainer :global(.swiper-pagination) {
-  /* position: relative;  */
-  width: 100%;
+  position: static; 
   margin-top: 1.5rem; 
-  bottom: auto;
+  text-align: center;
 }
 
 .carouselContainer :global(.swiper-button-next),
@@ -152,6 +155,14 @@
   }
 }
 
+@media (max-width: 520px){
+  .swiperContainer {
+    /* max-width: 1000px;*/
+     height: 150px;
+     margin-top: 5%;
+   }
+}
+
 @media (max-width: 480px) {
   .sectionTitle {
     font-size: 1.5rem;
@@ -174,4 +185,71 @@
   .carouselContainer :global(.swiper-button-prev) {
     display: none; 
   }
+
+  @media (max-width: 402px) {
+    .infoContainer {
+      margin-bottom: 2rem; 
+    }
+  
+    .infoContainer h3 {
+      font-size: 1rem; 
+    }
+  
+    .infoContainer p {
+      font-size: 0.75rem; 
+    }
+  
+    .slide {
+      height: 200px; 
+    }
+  
+    .swiperContainer {
+      margin-bottom: 2rem; 
+    }
+  }
+
+  
+  @media (max-width: 345px){
+    .swiperContainer {
+       height: 150px;
+       margin-top: 10%;
+     }
+  }
+
+  @media (max-width: 321px) {
+    .infoContainer {
+      margin-bottom: 2.5rem; 
+    }
+  
+    .infoContainer h3 {
+      font-size: 0.95rem; 
+    }
+  
+    .infoContainer p {
+      font-size: 0.7rem; 
+    }
+  
+    .slide {
+      height: 140px; 
+    }
+  
+    .swiperContainer {
+      margin-bottom: 2.5rem; 
+    }
+  }
+
+
+  @media (max-width: 310px){
+    .swiperContainer {
+       height: 100px;
+       margin-top: 20%;
+     }
+    
+    .h3{
+      margin-bottom: 20%;
+    }
+  }
+ 
+  
+
 }

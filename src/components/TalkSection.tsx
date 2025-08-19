@@ -54,7 +54,6 @@ const palestras: Talk[] = [
 ];
 
 const minicursos: Talk[] = [
-
   {
     src: "/images/minicursos/michel.png",
     title: "Introdução à Raspagem de Dados: APIs e dicas para projetos iniciantes",
@@ -125,13 +124,14 @@ const minicursos: Talk[] = [
 
 const conversas: Talk[] = [
   { src: "/images/rodas de conversa/ivanilton.png", title: "PPGCC-CM", speaker: "Prof. Ivanilton Polato", date: "26/08 - 20h30 (Anfiteatro)" },
-  { src: "/images/rodas de conversa/dupla.png", title: "Dupla Diplomação", speaker: "", date: "28/08 - 19h00 (Anfiteatro)" },
+  { src: "/images/rodas de conversa/Dupla.png", title: "Dupla Diplomação", speaker: "", date: "28/08 - 19h00 (Anfiteatro)" },
   { src: "/images/foto2.png", title: "Conversa com Egressos", speaker: "Egressos BCC", date: "26/08 - 20h30 (Anfiteatro)" },
 ];
 
 type CarouselProps = {
   items: Talk[];
 };
+
 
 const Carousel = ({ items }: CarouselProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -155,28 +155,46 @@ const Carousel = ({ items }: CarouselProps) => {
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={3} 
         loop={false}
         navigation
         pagination={{ clickable: true }}
         onSlideChange={handleSlideChange}
         coverflowEffect={{
-          rotate: 30, 
+          rotate: 30,
           stretch: 0,
           depth: 100,
           modifier: 1,
           slideShadows: false,
         }}
         className={styles.swiperContainer}
+        breakpoints={{
+
+          0: {
+            slidesPerView: 1.5,
+            spaceBetween: 15,
+          },
+
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        }}
       >
         {items.map((item, index) => (
           <SwiperSlide key={index} className={styles.slide}>
             <Image
               src={item.src}
               alt={item.title}
-              fill
               className={styles.image}
+              width={420}
+              height={250}
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              style={{ objectFit: "cover", width: "100%", height: "100%" }}
             />
           </SwiperSlide>
         ))}
