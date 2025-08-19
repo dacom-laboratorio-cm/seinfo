@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useEffect } from 'react';
 import styles from "@/styles/header.module.css";
+import { useEffect, useState } from "react";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,7 +17,6 @@ const Header = () => {
     };
   }, [menuOpen]);
 
-
   const handleLinkClick = () => {
     setMenuOpen(false);
   };
@@ -28,22 +27,39 @@ const Header = () => {
 
       <header className={styles.siteHeader}>
         <button
-          className={`${styles.hamburger} ${menuOpen ? styles.hamburgerOpen : ''}`}
+          type="button"
+          className={`${styles.hamburger} ${menuOpen ? styles.hamburgerOpen : ""}`}
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Abrir ou fechar menu"
-          aria-expanded={menuOpen}
+          aria-expanded={menuOpen ? "true" : "false"}
         >
           <span className={styles.hamburgerLine}></span>
           <span className={styles.hamburgerLine}></span>
           <span className={styles.hamburgerLine}></span>
         </button>
 
-        <nav className={`${styles.mainNav} ${menuOpen ? styles.navOpen : ''}`}>
+        <nav className={`${styles.mainNav} ${menuOpen ? styles.navOpen : ""}`}>
           <ul>
-            <li><a href="#datas" onClick={handleLinkClick}>Datas</a></li>
-            <li><a href="#palestras" onClick={handleLinkClick}>Palestras</a></li>
-            <li><a href="#minicursos" onClick={handleLinkClick}>Minicursos</a></li>
-            <li><a href="#inscricoes" onClick={handleLinkClick}>Inscrições</a></li>
+            <li>
+              <a href="#datas" onClick={handleLinkClick}>
+                Datas
+              </a>
+            </li>
+            <li>
+              <a href="#palestras" onClick={handleLinkClick}>
+                Palestras
+              </a>
+            </li>
+            <li>
+              <a href="#minicursos" onClick={handleLinkClick}>
+                Minicursos
+              </a>
+            </li>
+            <li>
+              <a href="#inscricoes" onClick={handleLinkClick}>
+                Inscrições
+              </a>
+            </li>
           </ul>
         </nav>
       </header>

@@ -1,13 +1,13 @@
 import styles from "@/styles/timeline.module.css";
 
 const timelineData = [
-  { date: "01/08", title: "Abertura do Evento", description: "Palestras e mais alguma coisa." },
-  { date: "02/08", title: "Coffee Break & Palestras", description: "Networking e aprendizado." },
-  { date: "03/08", title: "Minicurso", description: "Introdução ao Linux." },
-  { date: "04/08", title: "Computação Forense", description: "Palestra com especialista." },
-  { date: "05/08", title: "Minicurso", description: "Banco de Dados Avançado" },
-  { date: "06/08", title: "Palestra", description: "Desafios no mercado de trabalho" },
-  { date: "07/08", title: "Encerramento", description: "Premiações e despedida." },
+  { date: "25/08", title: "Abertura do Evento", description: "Confraternização" },
+  { date: "25/08", title: "Palestras & Minicursos", description: "Ministrados por professores e alunos" },
+  { date: "26/08", title: "Palestras & Minicursos", description: "Ministrados por professores e alunos" },
+  { date: "27/08", title: "Palestras & Minicursos", description: "Ministrados por professores e alunos" },
+  { date: "28/08", title: "Minicursos & Rodas de Conversa", description: "Ministrados por professores e alunos" },
+  { date: "29/08", title: "Minicursos", description: "Ministrados por alunos" },
+  { date: "29/08", title: "Encerramento do Evento", description: "" },
 ];
 
 const DatesTimeline = () => {

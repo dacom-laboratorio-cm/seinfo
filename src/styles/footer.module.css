@@ -20,6 +20,11 @@
 
 .FooterImages img {
   transition: transform 0.3s ease;
+  max-width: 100%;  
+  height: auto;     
+  display: block;   
+  margin: 0 auto;   
+  max-height: 80px; 
 }
 
 .FooterImages img:hover {
@@ -66,3 +71,4 @@
     padding: 0 0.5rem;
   }
 }
+
