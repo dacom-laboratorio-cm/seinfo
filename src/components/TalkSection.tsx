@@ -21,12 +21,20 @@ type Talk = {
 };
 
 const palestras: Talk[] = [
+  //25/08
+  {
+    src: "/images/palestras/daniel cavalcanti.jpg",
+    title: "Fala da Coordenação",
+    speaker: "Prof. Paulo Sabo",
+    date: "25/08 - 16h00 (Anfiteatro)",
+  },
   {
     src: "/images/palestras/daniel cavalcanti.jpg",
     title: "Aprendizado por Reforço: A Inteligência Artificial que aprende com experiências",
     speaker: "Prof. Daniel Cavalcanti Jeronymo - UTFPR Toledo",
     date: "25/08 - 19h00 (Anfiteatro - Bloco E)",
   },
+  //26/08
   {
     src: "/images/palestras/mariana carmin.jpg",
     title: "Computação de Alto Desempenho",
@@ -34,11 +42,24 @@ const palestras: Talk[] = [
     date: "26/08 - 10h00 (Remoto)",
   },
   {
+    src: "/images/palestras/daniel cavalcanti.jpg",
+    title: "Extensão Universitária: Tudo o que você precisa saber",
+    speaker: "Prof. Paulo Sabo",
+    date: "26/08 - 14h00 (Anfiteatro)",
+  },
+  {
+    src: "/images/palestras/daniel cavalcanti.jpg",
+    title: "Por Dentro da Iniciação Científica: Bolsas, Projetos e Oportunidades",
+    speaker: "Prof. André Schwerz e Prof. Leandro Ensina",
+    date: "26/08 - 15h30 (Anfiteatro)",
+  },
+  {
     src: "/images/palestras/renan breda.jpg",
     title: "A Necessidade do Registro de Marca, Patente e Software",
     speaker: "Renan Breda",
     date: "26/08 - 19h00 (Anfiteatro - Bloco E)",
   },
+  //27/08
   {
     src: "/images/palestras/cesar henrique.jpg",
     title: "Desenvolvimento de Software no Mercado Atual: Perfil, Salários e Tecnologias em Alta",
@@ -50,6 +71,19 @@ const palestras: Talk[] = [
     title: "DevOps",
     speaker: "Gabriel Leite da Rocha",
     date: "27/08 - 20h30 (Anfiteatro - Bloco E)",
+  },
+  //28/08
+  {
+    src: "/images/palestras/gabriel leite.jpg",
+    title: "Linguagens de Programação Esotéricas",
+    speaker: "Thiago Alexsander da Costa Pereira",
+    date: "28/08 - 14h00 (Anfiteatro)",
+  },
+  {
+    src: "/images/palestras/gabriel leite.jpg",
+    title: "Saúde Mental",
+    speaker: "Fabrício Moura - Psicólogo da UTFPR-CM",
+    date: "28/08 - 15h00 (Anfiteatro)",
   },
 ];
 
@@ -123,15 +157,26 @@ const minicursos: Talk[] = [
 ];
 
 const conversas: Talk[] = [
-  { src: "/images/rodas de conversa/ivanilton.png", title: "PPGCC-CM", speaker: "Prof. Ivanilton Polato", date: "26/08 - 20h30 (Anfiteatro)" },
+  { src: "/images/rodas de conversa/ivanilton.png", title: "PPGCC-CM", speaker: "Prof. Ivanilton Polato", date: "27/08 - 15h00 (Anfiteatro)" },
   { src: "/images/rodas de conversa/Dupla.png", title: "Dupla Diplomação", speaker: "", date: "28/08 - 19h00 (Anfiteatro)" },
-  { src: "/images/rodas de conversa/egressos.jpeg", title: "Conversa com Egressos", speaker: "Egressos BCC", date: "26/08 - 20h30 (Anfiteatro)" },
+  {
+    src: "/images/rodas de conversa/egressos.jpeg",
+    title: "Conversa com Egressos",
+    speaker: "Egressos BCC",
+    date: "26/08 - 20h30 (Anfiteatro)",
+  },
+];
+
+const atividades: Talk[] = [
+  { src: "/images/rodas de conversa/ivanilton.png", title: "Jogos Eletrônicos", speaker: "Atlética Renegados", date: "26/08 - 17h00" },
+  { src: "/images/rodas de conversa/ivanilton.png", title: "Live Coding", speaker: "Atlética Renegados", date: "27/08 - 16h30" },
+  { src: "/images/rodas de conversa/ivanilton.png", title: "Quizzes", speaker: "Atlética Renegados", date: "28/08 - 17h00" },
+  { src: "/images/rodas de conversa/ivanilton.png", title: "Atividade Recreativa", speaker: "Atlética Renegados", date: "29/08 - 14h00" },
 ];
 
 type CarouselProps = {
   items: Talk[];
 };
-
 
 const Carousel = ({ items }: CarouselProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -168,7 +213,6 @@ const Carousel = ({ items }: CarouselProps) => {
         }}
         className={styles.swiperContainer}
         breakpoints={{
-
           0: {
             slidesPerView: 1.5,
             spaceBetween: 15,
@@ -206,21 +250,24 @@ const Carousel = ({ items }: CarouselProps) => {
 const TalksSection = () => {
   return (
     <section id="palestras" className={styles.talksSection}>
-       <div className={styles.separator}></div> 
+      <div className={styles.separator}></div>
       <h2 className={styles.sectionTitle}>Palestras</h2>
       <Carousel items={palestras} />
 
-      <div className={styles.separator}></div> 
+      <div className={styles.separator}></div>
 
       <h2 id="minicursos" className={styles.sectionTitle}>
         Minicursos
       </h2>
       <Carousel items={minicursos} />
 
-      <div className={styles.separator}></div> 
+      <div className={styles.separator}></div>
 
       <h2 className={styles.sectionTitle}>Rodas de Conversa</h2>
       <Carousel items={conversas} />
+
+      <h2 className={styles.sectionTitle}>Atividades</h2>
+      <Carousel items={atividades} />
     </section>
   );
 };
