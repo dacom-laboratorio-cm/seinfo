@@ -23,7 +23,7 @@ type Talk = {
 const palestras: Talk[] = [
   //25/08
   {
-    src: "/images/palestras/daniel cavalcanti.jpg",
+    src: "/images/palestras/sabo.png",
     title: "Fala da Coordenação",
     speaker: "Prof. Paulo Sabo",
     date: "25/08 - 16h00 (Anfiteatro)",
@@ -42,13 +42,13 @@ const palestras: Talk[] = [
     date: "26/08 - 10h00 (Remoto)",
   },
   {
-    src: "/images/palestras/daniel cavalcanti.jpg",
+    src: "/images/palestras/sabo.png",
     title: "Extensão Universitária: Tudo o que você precisa saber",
     speaker: "Prof. Paulo Sabo",
     date: "26/08 - 14h00 (Anfiteatro)",
   },
   {
-    src: "/images/palestras/daniel cavalcanti.jpg",
+    src: "/images/palestras/andre.jpg",
     title: "Por Dentro da Iniciação Científica: Bolsas, Projetos e Oportunidades",
     speaker: "Prof. André Schwerz e Prof. Leandro Ensina",
     date: "26/08 - 15h30 (Anfiteatro)",
@@ -74,13 +74,13 @@ const palestras: Talk[] = [
   },
   //28/08
   {
-    src: "/images/palestras/gabriel leite.jpg",
+    src: "/images/palestras/Design sem nome (1).png",
     title: "Linguagens de Programação Esotéricas",
     speaker: "Thiago Alexsander da Costa Pereira",
     date: "28/08 - 14h00 (Anfiteatro)",
   },
   {
-    src: "/images/palestras/gabriel leite.jpg",
+    src: "/images/palestras/fabricio.jpeg",
     title: "Saúde Mental",
     speaker: "Fabrício Moura - Psicólogo da UTFPR-CM",
     date: "28/08 - 15h00 (Anfiteatro)",
@@ -168,10 +168,10 @@ const conversas: Talk[] = [
 ];
 
 const atividades: Talk[] = [
-  { src: "/images/rodas de conversa/ivanilton.png", title: "Jogos Eletrônicos", speaker: "Atlética Renegados", date: "26/08 - 17h00" },
-  { src: "/images/rodas de conversa/ivanilton.png", title: "Live Coding", speaker: "Atlética Renegados", date: "27/08 - 16h30" },
-  { src: "/images/rodas de conversa/ivanilton.png", title: "Quizzes", speaker: "Atlética Renegados", date: "28/08 - 17h00" },
-  { src: "/images/rodas de conversa/ivanilton.png", title: "Atividade Recreativa", speaker: "Atlética Renegados", date: "29/08 - 14h00" },
+  { src: "/images/atividades/renegados.jpg", title: "Jogos Eletrônicos", speaker: "Atlética Renegados", date: "26/08 - 17h00" },
+  { src: "/images/atividades/renegados.jpg", title: "Live Coding", speaker: "Atlética Renegados", date: "27/08 - 16h30" },
+  { src: "/images/atividades/renegados.jpg", title: "Quizzes", speaker: "Atlética Renegados", date: "28/08 - 17h00" },
+  { src: "/images/atividades/renegados.jpg", title: "Atividade Recreativa", speaker: "Atlética Renegados", date: "29/08 - 14h00" },
 ];
 
 type CarouselProps = {
